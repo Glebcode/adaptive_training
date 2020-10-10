@@ -1,7 +1,15 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 header {
     position: relative;
     background: url(images/2.jpg);
-    background-size: 1450px;
+    background-size: 100%;
     height: 700px;
     width: 1450px;
 }
@@ -15,7 +23,7 @@ header {
     border: 2px;
     border-radius: 35px;
     padding: 0px 20px;
-    padding-right: 80px ;
+    padding-right: 80px;
 }
 
 .searchButton {
@@ -36,36 +44,113 @@ header {
     padding-top: 350px;
     padding-left: 35%;
 }
-.searchBox:focus{
+
+.searchBox:focus {
     outline: none;
 }
-.searchButton:focus{
+
+.searchButton:focus {
     outline: none;
     background-color: cadetblue;
 }
-.searchButton:hover{
+
+.searchButton:hover {
     background-color: rgb(131, 221, 224);
 }
-.p1{
+
+.p1 {
     position: absolute;
     height: 70px;
     width: 150px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 45px;
+    font-size: 2.25rem;
     letter-spacing: 35px;
     font-weight: bolder;
     left: 540px;
     top: 105px;
 
 }
-.p2{
+
+.p2 {
     position: absolute;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
+    font-size: 1.25rem;
     letter-spacing: 15px;
     font-weight: lighter;
     height: 70px;
     width: 150px;
     left: 590px;
     top: 225px;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    header {
+        width: 1100px;
+        flex-direction: column;
+        background-size: 120%;
+        background: url(images/2.jpg);
+        background-size: 100%;
+        height: 615px;
+    }
+
+    .search {
+
+        padding-left: 25%;
+    }
+
+    .searchButton {
+        left: 605px;
+        top: 352px;
+    }
+
+    .p1 {
+        left: 310px;
+        top: 105px;
+    }
+
+    .p2 {
+        left: 360px;
+        top: 225px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 750px) {
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        width: 900px;
+        flex-direction: column;
+        background-size: 100%;
+        background: url(images/2.jpg);
+        background-size: 100%;
+        height: 445px;
+    }
+
+    .search {
+        padding-left: 22%;
+    }
+
+    .searchButton {
+        left: 526px;
+        top: 301px;
+    }
+    .searchBox{
+        top: 300px;
+    }
+
+    .p1 {
+        left: 250px;
+        top: 95px;
+    }
+
+    .p2 {
+        left: 300px;
+        top: 195px;
+    }
 }
