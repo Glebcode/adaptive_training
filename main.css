@@ -4,6 +4,7 @@ html {
 
 body {
     overflow-x: hidden;
+    background-color: rgb(170, 213, 241);
 }
 
 header {
@@ -152,5 +153,48 @@ header {
     .p2 {
         left: 300px;
         top: 195px;
+    }
+}
+@media screen and (max-width: 749px) and (min-width: 360px) {
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        width: 500px;
+        flex-direction: column;
+        background-size: 100%;
+        background: url(images/2.jpg);
+        background-size: 100%;
+        height: 280px;
+    }
+
+    .search {
+        padding-left: 15%;
+    }
+
+    .searchButton {
+        width: 50px;
+        height: 27px;
+        left: 324px;
+        top: 202px;
+        font-size: 10px;
+    }
+    .searchBox{
+        width: 300px;
+        height: 30px;
+        top: 200px;
+    }
+
+    .p1 {
+        left: 140px;
+        top: 45px;
+        font-size: 20px;
+        letter-spacing: 18px;
+    }
+
+    .p2 {
+        left: 130px;
+        top: 105px;
     }
 }
