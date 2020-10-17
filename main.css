@@ -319,7 +319,8 @@ header {
         height: 615px;
     }
 
-    .firstMainWrapper {
+    .firstMainWrapper,
+    .thirdMainWrapper {
         width: 100%;
         height: 615px;
     }
@@ -376,7 +377,8 @@ header {
         height: 445px;
     }
 
-    .firstMainWrapper {
+    .firstMainWrapper,
+    .thirdMainWrapper {
         width: 100%;
         height: 445px;
     }
@@ -435,7 +437,8 @@ header {
         height: 280px;
     }
 
-    .firstMainWrapper {
+    .firstMainWrapper,
+    .thirdMainWrapper {
         width: 100%;
         height: 280px;
     }
@@ -518,7 +521,8 @@ header {
         height: 260px;
     }
 
-    .firstMainWrapper {
+    .firstMainWrapper,
+    .thirdMainWrapper {
         width: 100%;
         height: 260px;
     }
