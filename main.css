@@ -120,7 +120,7 @@ header {
     justify-content: center;
 }
 
-main {
+.firstMainWrapper {
     background: url(images/3.jpg);
     background-size: cover;
     height: 700px;
@@ -132,6 +132,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 .topMenu {
     position: relative;
     background-color: rgb(155, 180, 226);
@@ -140,6 +141,7 @@ main {
     display: flex;
     align-items: center;
 }
+
 .mainParagraf {
     background-color: rgb(241, 241, 241);
     opacity: 0.5;
@@ -154,14 +156,17 @@ main {
     width: 30%;
     border-radius: 2%;
 }
-.pText{
+
+.pText {
     margin: 0 3% 5% 8%;
     text-indent: 10%;
     font-size: 1.1rem;
 }
-.buttonMain{
+
+.buttonMain {
     background-color: rgb(209, 112, 112);
 }
+
 .imgMain {
     position: absolute;
     height: 60%;
@@ -169,19 +174,23 @@ main {
     top: 35%;
     right: 30px;
 }
-.firstImg, .secondImg{
-    width: 80% ;
+
+.firstImg,
+.secondImg {
+    width: 80%;
     border-radius: 2%;
 }
-.firstImg{
+
+.firstImg {
     background: url(images/main1.jpg);
     background-size: cover;
-    height: 40% ;
+    height: 40%;
 }
-.secondImg{
+
+.secondImg {
     background: url(images/main2.jpg);
     background-size: cover;
-    height: 50% ;
+    height: 50%;
     margin: 5% 0 0 10%;
 }
 
@@ -220,6 +229,58 @@ main {
     padding: 0 0 0 35%;
 }
 
+.secondMainWrapper {
+    background: url(images/1.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonsOpportunitiesWrapper {
+    position: relative;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    top: -4%;
+    background: rgba(255, 255, 255, 0.2);  
+    backdrop-filter: blur(8px);
+    filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+.buttonsOpportunities{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    display: flex;
+}
+.opporBut{
+    all: initial;
+    height: 90%;
+    width: 10%;
+    padding: 0;
+    margin: 2px 10px 0 10px;
+}
+.opporBut1{
+    all: initial;
+    height: 100%;
+    width: 100%;
+}
+
+.opporBut1:focus {
+    outline: none;
+    background-color: cadetblue;
+}
+
+.opporBut1:hover {
+    background-color: rgb(131, 221, 224);
+}
+
 @media screen and (max-width: 1280px) and (min-width: 1024px) {
     html {
         font-size: 16px;
@@ -231,18 +292,26 @@ main {
         height: 615px;
     }
 
-    main {
+    .firstMainWrapper {
         width: 100%;
         height: 615px;
     }
+
+    .secondMainWrapper {
+        width: 100%;
+        height: 615px;
+    }
+
     #butGlobal,
     .menuPoints {
         font-size: 0.75rem;
     }
-    .hMain{
-    font-size: 1.9rem;
+
+    .hMain {
+        font-size: 1.9rem;
     }
-    .pText{
+
+    .pText {
         font-size: 1.06rem;
     }
 
@@ -280,7 +349,12 @@ main {
         height: 445px;
     }
 
-    main {
+    .firstMainWrapper {
+        width: 100%;
+        height: 445px;
+    }
+
+    .secondMainWrapper {
         width: 100%;
         height: 445px;
     }
@@ -289,11 +363,13 @@ main {
     .menuPoints {
         font-size: 0.6rem;
     }
-    .hMain{
-    font-size: 1.5rem;
+
+    .hMain {
+        font-size: 1.5rem;
     }
+
     .pText,
-    .buttonMai{
+    .buttonMai {
         font-size: 0.78rem;
     }
 
@@ -332,7 +408,12 @@ main {
         height: 280px;
     }
 
-    main {
+    .firstMainWrapper {
+        width: 100%;
+        height: 280px;
+    }
+
+    .secondMainWrapper {
         width: 100%;
         height: 280px;
     }
@@ -363,16 +444,19 @@ main {
         font-size: 0.75rem;
         padding: 0 0.5% 0 3%;
     }
+
     .hMain {
-    font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-    .pText{
+
+    .pText {
         font-size: 0.6rem;
     }
-    .buttonMain{
+
+    .buttonMain {
         font-size: 0.4rem;
     }
-    
+
 
 
 
@@ -395,6 +479,7 @@ main {
         height: 120px;
     }
 }
+
 @media screen and (max-width: 450px) and (min-width: 1px) {
     html {
         font-size: 10px;
@@ -406,15 +491,22 @@ main {
         height: 260px;
     }
 
-    main {
+    .firstMainWrapper {
         width: 100%;
         height: 260px;
     }
+
+    .secondMainWrapper {
+        width: 100%;
+        height: 260px;
+    }
+
     .search-wrapper {
         /* padding-left: 15%; */
         width: 270px;
         height: 30px;
     }
+
     .searchButton {
         width: 40px;
         height: 24px;
@@ -432,19 +524,23 @@ main {
 
     #butGlobal,
     .menuPoints {
-        font-size: 0.6rem;
+        font-size: 0.55rem;
         padding: 0 0.5% 0 3%;
     }
+
     .hMain {
-    font-size: 1rem;
+        font-size: 0.8rem;
     }
+
     .searchBox {
         font-size: 1rem;
     }
+
     .pText,
-    .buttonMain{
-        font-size: 0.67rem;
+    .buttonMain {
+        font-size: 0.65rem;
     }
+
     .title-wrapper {
         width: 230px;
         height: 110px;
