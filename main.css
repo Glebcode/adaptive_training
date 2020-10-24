@@ -301,6 +301,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 .mainParagraf2,
 .mainParagraf1 {
     background-color: rgba(241, 241, 241, .5);
@@ -328,25 +329,66 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    margin: 0;
+}
+
+.firstFooterWrappper {
+    height: 60%;
+    width: 85%;
 }
 
 .footerParagrafWrapper {
-    margin-top: -25%;
-    margin-left: -25%;
+    background-color: rgba(241, 241, 241, .5);
     position: absolute;
-    width: 60%;
-    height: 35%;
+    top: 15%;
+    left: 15%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    width: 45%;
+    height: 50%;
 }
 
 .imgFooter {
     position: absolute;
-    height: 100%;
+    height: 35%;
+    width: 25%;
+    top: 22%;
+    right: 14%;
+    border-radius: 4px;
+}
+
+.secondFooterWrapper {
+    position: absolute;
+    background: rgb(234, 216, 220);
+    background: linear-gradient(90deg, rgba(234, 216, 220, 1) 25%, rgba(94, 170, 200, 1) 50%, rgba(153, 215, 232, 1) 75%);
+    height: 30%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 0;
+    bottom: 0;
+}
+
+.nameFooter {
+    position: absolute;
+    height: 95%;
+    width: 30%;
+}
+
+.footerP1 {
+    position: absolute;
+    left: 8%;
+    bottom: 50%;
+    color: rgb(20, 12, 14);
+}
+
+.footerP2 {
+    position: absolute;
+    color: rgb(29, 18, 21);
+    left: 20%;
+    bottom: 20%;
 }
 
 
@@ -382,16 +424,22 @@ a {
         font-size: 1.9rem;
         text-align: center;
     }
+    .footerP1,
+    .footerP2{
+        font-size: 1.5rem;
+    }
 
     .pText {
         font-size: 1.06rem;
     }
-    .mainParagraf2{
+
+    .mainParagraf2 {
         left: 20%;
         height: 50%;
         width: 40%;
     }
-    .mainParagraf1{
+
+    .mainParagraf1 {
         width: 40%;
     }
 
@@ -435,19 +483,23 @@ a {
         width: 100%;
         height: 800px;
     }
-    .footerWrapper{
 
+    .footerP1,
+    .footerP2{
+        font-size: 1.5rem;
     }
+
     .mainParagraf {
         top: 5%;
         position: relative;
         height: 30%;
         width: 60%;
     }
+
     .mainParagraf1,
-    .mainParagraf2{
+    .mainParagraf2 {
         height: 55%;
-        width: 60%;   
+        width: 60%;
     }
 
     .imgMain {
@@ -457,20 +509,22 @@ a {
         top: 13%;
         right: 30px;
     }
+
     .topMenu {
         height: 8%;
     }
 
 
-    .thirdMainWrapper,  
+    .thirdMainWrapper,
     .secondMainWrapper,
     .footerWrapper {
         width: 100%;
         height: 445px;
     }
-  .mainParagraf2{
-      right: 20%;
-  }
+
+    .mainParagraf2 {
+        right: 20%;
+    }
 
     #butGlobal,
     .menuPoints {
@@ -485,6 +539,15 @@ a {
     .buttonMain {
         font-size: 1.1rem;
     }
+
+    .footerText {
+        font-size: 0.9rem;
+    }
+
+    .secondFooterWrapper {
+        
+    }
+
 
     .search-wrapper {
         /* padding-left: 22%; */
@@ -568,10 +631,15 @@ a {
         font-size: 1rem;
     }
 
+    .footerText {
+        font-size: 0.6rem;
+    }
+
     .buttonMain {
         font-size: 0.55rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.2rem;
     }
 
@@ -581,12 +649,14 @@ a {
         width: 100%;
         height: 800px;
     }
+
     .mainParagraf1,
-    .mainParagraf2{
+    .mainParagraf2 {
         height: 60%;
-        width: 60%;   
+        width: 60%;
     }
-    .mainParagraf2{
+
+    .mainParagraf2 {
         right: 20%;
     }
 
@@ -604,10 +674,16 @@ a {
         top: 15%;
         right: 30px;
     }
+
     .topMenu {
         height: 8%;
     }
-   
+
+    .footerP1,
+    .footerP2{
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+    }
 
 
 
@@ -641,6 +717,7 @@ a {
         /* flex-direction: column; */
         height: 260px;
     }
+
     .secondMainWrapper,
     .thirdMainWrapper,
     .footerWrapper {
@@ -678,20 +755,27 @@ a {
     .hMain {
         font-size: 1rem;
     }
-h2{
-font-size: 1rem;
-}
+
+    h2 {
+        font-size: 1rem;
+    }
+
     .searchBox {
         font-size: 1rem;
     }
 
-    .pText
-     {
+    .pText {
         font-size: 1.1rem;
     }
-    .buttonMain{
+
+    .footerText {
+        font-size: 0.6rem;
+    }
+
+    .buttonMain {
         font-size: 0.7rem;
     }
+
     .title-wrapper {
         width: 230px;
         height: 110px;
@@ -710,14 +794,17 @@ font-size: 1rem;
         height: 30%;
         width: 60%;
     }
-     .mainParagraf1,
-    .mainParagraf2{
+
+    .mainParagraf1,
+    .mainParagraf2 {
         height: 55%;
-        width: 70%;   
+        width: 70%;
     }
-    .mainParagraf2{
+
+    .mainParagraf2 {
         right: 20%;
     }
+
     .imgMain {
         position: relative;
         height: 40%;
@@ -725,8 +812,14 @@ font-size: 1rem;
         top: 15%;
         right: 30px;
     }
+
     .topMenu {
         height: 8%;
+    }
+    .footerP1,
+    .footerP2{
+        font-size: 1rem;
+        letter-spacing: 1px;
     }
 
 }
