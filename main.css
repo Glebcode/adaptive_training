@@ -12,6 +12,7 @@ body {
 p {
     margin: 0;
     padding: 0;
+    font-family: ;
 }
 
 h {
@@ -397,8 +398,8 @@ a {
     display: flex;
     flex-direction: row;
     height: 50%;
-    width: 65%;
-    left: 40%;
+    width: 55%;
+    left: 38%;
     padding: 10px 0 0 0;
 }
 .social a{
@@ -433,7 +434,7 @@ a {
     .firstMainWrapper,
     .thirdMainWrapper,
     .footerWrapper,
-    .tableWrapper {
+    .thirdFooterWrapper {
         width: 100%;
         height: 615px;
     }
@@ -546,7 +547,7 @@ a {
     .thirdMainWrapper,
     .secondMainWrapper,
     .footerWrapper,
-    .tableWrapper {
+    .thirdFooterWrapper {
         width: 100%;
         height: 445px;
     }
@@ -616,7 +617,7 @@ a {
     .firstMainWrapper,
     .thirdMainWrapper,
     .footerWrapper,
-    .tableWrapper {
+    .thirdFooterWrapper {
         width: 100%;
         height: 280px;
     }
@@ -756,7 +757,7 @@ a {
     .secondMainWrapper,
     .thirdMainWrapper,
     .footerWrapper,
-    .tableWrapper {
+    .thirdFooterWrapper {
         width: 100%;
         height: 260px;
     }
